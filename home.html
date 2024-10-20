@@ -1,0 +1,246 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-left: 60px;
+
+
+}
+.menu .logo a{
+  text-decoration: none;
+  color: rgb(255, 11, 11);
+  font-size: 35px;
+  font-weight: 600;
+
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+/*img{
+  color: rgba(252, 251, 251, 0.791);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}*/
+
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+
+
+.center
+{
+  background-image: url("img2.jpg");
+  padding-top: 30px;
+}
+
+
+
+
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-20deg, red 50%, #000 50%);
+  bottom:0;
+  left:-100%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+  
+</style>  
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+       </head>
+<body>
+  <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">CRIME REPORTS</a>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="analysis.php">Analysis</a></li>
+        <li><a href="login_form.html">LOGIN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="center">
+    <div class="infogram-embed" data-id="96ce9694-9105-401e-a9fb-f6a76266ec19" data-type="interactive" data-title="Cybercrime in cities by act 2016" data-processed="1" style="min-height: 1px;" id="ig-68eb5505-a159-088a-76ab-fc3fad4d44a7"><iframe src="https://e.infogram.com/96ce9694-9105-401e-a9fb-f6a76266ec19?parent_url=https%3A%2F%2Fwww.firstpost.com%2Ftech%2Fnews-analysis%2Fncrb-report-shows-trends-in-cybercrime-in-cities-states-and-union-territories-and-contains-some-surprising-insights-4242851.html&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Cybercrime in cities by act 2016" style="border: none; width: 725px; height: 625px;"></iframe></div> 
+  </div>
+
+  <!--<div class="bottom">
+    <iframe src="https://e.infogram.com/9a72729a-b096-40d2-b9ec-beb4262c8938?parent_url=https%3A%2F%2Fwww.firstpost.com%2Ftech%2Fnews-analysis%2Fncrb-report-shows-trends-in-cybercrime-in-cities-states-and-union-territories-and-contains-some-surprising-insights-4242851.html&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Cybercrime in Union Territories 2016" style="border: none; width: 725px; height: 625px;"></iframe> 
+  </div> -->
+
+  
+
+    
+  </div>
+</body>
+</html>
